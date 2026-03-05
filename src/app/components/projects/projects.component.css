@@ -1,0 +1,86 @@
+/* Container for the entire projects section */
+.projects {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+h2 {
+    color: #00d4ff;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* The responsive grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Adapts to screen size */
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual project card styling */
+.project-card {
+    background: #252525;
+    padding: 2rem;
+    border-radius: 12px;
+    border-top: 4px solid #00d4ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease; /* Smooth hover effect */
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Lifts the card on hover for interactivity */
+    box-shadow: 0 10px 20px rgba(0, 212, 255, 0.2); /* Soft blue glow */
+}
+
+/* Category label */
+.card-header {
+    margin-bottom: 1rem;
+}
+
+.category {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #00d4ff;
+    border: 1px solid #00d4ff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #ffffff;
+}
+
+p {
+    color: #b0bec5;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Skill tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tags span {
+    background: rgba(0, 212, 255, 0.1);
+    color: #00d4ff;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 500;
+}
